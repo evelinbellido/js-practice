@@ -1,5 +1,6 @@
 //bifurcacione
 //aqui recibe los 2 valor a procesar
+//el prompt si no es especificado que tipo de valor ingresa simepre va ingresar un string entonces se convierte al valor que se desa recibir si seria un integer seria //con parseint
 var val1 = prompt("ingrese su primer valor");
 var val2 = prompt("ingreso su segundo valor");
 //inicia el swicht con boolean
