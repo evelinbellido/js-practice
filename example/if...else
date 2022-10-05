@@ -1,0 +1,43 @@
+function rango(score, name) {
+    let param1 = 70;
+    let param2 = 50;
+
+    if (score >= param1) {
+        document.getElementById("nomb").innerHTML = (name);
+        document.getElementById("punt").innerHTML = (score + ' ingresaste to University');
+        document.getElementById("nomb").style.background = 'green';
+        document.getElementById("punt").style.background = 'green';
+    }else if (score >= param2 ) {
+        document.getElementById("nomb").innerHTML = (name);
+        document.getElementById("punt").innerHTML = (score +' ingresaste to college');
+        document.getElementById("nomb").style.background = 'blue';
+        document.getElementById("punt").style.background = 'blue';
+    }else {
+        document.getElementById("nomb").innerHTML = (name);
+        //console.log(name);
+        document.getElementById("punt").innerHTML = (score +' you failed try to test again');
+        document.getElementById("nomb").style.background = 'red';
+        document.getElementById("punt").style.background = 'red';
+    }
+}
+
+function time(age) {
+
+    let param3 = 20;
+
+    if (age >= param3) {
+        document.getElementById("ed").innerHTML = (age +' eres apto para university');
+        document.getElementById("ed").style.background = 'green';
+    } else {
+        document.getElementById("ed").innerHTML = (age +' eres apto para college');
+        document.getElementById("ed").style.background = 'yellow';
+    }
+}
+
+
+let nombre = prompt('ingrese su nombre: ');
+let puntaje = prompt('ingrese su puntaje: ');
+let edad = prompt('ingrese su edad: ')
+
+rango(puntaje,nombre);
+time(edad);
